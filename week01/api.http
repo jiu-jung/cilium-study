@@ -1,0 +1,20 @@
+### 정상 요청
+POST http://localhost:8080/unshare/netns
+Content-Type: application/json
+
+{
+  "path": "/bin/sleep",
+  "args": ["30"]
+}
+
+### 잘못된 메서드
+GET http://localhost:8080/unshare/netns
+
+### 잘못된 path
+POST http://localhost:8080/unshare/netns
+Content-Type: application/json
+
+{
+  "path": "sleep",
+  "args": ["30"]
+}
