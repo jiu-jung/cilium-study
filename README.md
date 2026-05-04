@@ -1,1 +1,1 @@
-# cilium-hands-on
+# cilium-study
